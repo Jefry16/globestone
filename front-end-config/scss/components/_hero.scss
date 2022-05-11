@@ -1,0 +1,48 @@
+.hero {
+  height: 25.7rem;
+  padding: 1.7rem 2.7rem 0;
+  background-image: url("../../public/images/solar.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__title {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    color: $white;
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    max-width: 37.4rem;
+    @include md {
+      font-size: 4rem;
+      max-width: 67.4rem;
+    }
+    @include lg {
+      font-size: 6rem;
+      max-width: 90.4rem;
+    }
+  }
+  &__desc {
+    line-height: 1.2;
+    color: $white;
+    font-family: "Noto Serif", serif;
+    font-weight: lighter;
+    font-size: 1.6rem;
+    max-width: 37.4rem;
+    @include md {
+      font-size: 2rem;
+      max-width: 67.4rem;
+    }
+    @include lg {
+      font-size: 3rem;
+      max-width: 90.4rem;
+    }
+  }
+
+  @include md {
+    height: 40rem;
+  }
+
+  @include lg {
+    height: 88vh;
+  }
+}
