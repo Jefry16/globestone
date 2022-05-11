@@ -13,7 +13,7 @@
   &__menu-container {
     cursor: pointer;
   }
-  @include lg{
+  @include xl{
     display: none;
   }
 }
