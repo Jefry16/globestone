@@ -1,0 +1,73 @@
+.about {
+  .intro {
+    &__content {
+      padding: 5rem;
+    }
+    &__title {
+      color: $primary;
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.6rem;
+      line-height: 1.2;
+    }
+  }
+  .us {
+    &__title {
+      font-size: 2.2rem;
+      text-align: center;
+    }
+    &__container {
+      padding: 2.3rem 4.5rem;
+      display: flex;
+      overflow: auto;
+      gap: 2.4rem;
+      &::-webkit-scrollbar {
+        width: 0 !important;
+      }
+    }
+
+    &__card {
+      box-shadow: 0px 5px 5px #35353526;
+      min-width: 260px;
+      min-height: 326px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 2.2rem;
+      gap: 1rem;
+      &-imgcontainer {
+        width: 17.2rem;
+        height: 17.2rem;
+        border-radius: 50%;
+        background-color: #dda;
+        overflow: hidden;
+        align-self: center;
+      }
+      &-name {
+        font-family: "Noto Serif", serif;
+        font-size: 1.6rem;
+        color: #353535;
+        text-transform: uppercase;
+      }
+      &-desc {
+        font-family: "Noto Sans", "sans-serif";
+        color: #353535;
+        font-size: 1.7rem;
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .r{
+    padding: 4rem;
+    &__title{
+      line-height: 1.2;
+      color: $primary;
+      font-size: 2.2rem;
+      font-family: "Montserrat", sans-serif;
+
+    }
+    &__btn{
+      margin: 2rem 0;
+    }
+  }
+}

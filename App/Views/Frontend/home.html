@@ -1,0 +1,111 @@
+{% extends 'base.html' %} {% block content %}
+<main class="home">
+  <div class="hero m-bottom-3">
+    <h1 class="hero__title">
+      ¿TE AYUDAMOS? TRAEMOS MUY MUY BUENA
+      <span style="color: #fae345">ENERGÍA</span>.
+    </h1>
+    <p class="hero__desc">
+      Te acompañamos en tu entrada al mundo de la energía limpia, ayudándote a
+      encontrar las mejores soluciones para tu empresa u hogar.
+    </p>
+  </div>
+
+  <section class="services m-bottom-3">
+    <h2 class="services__title">¿Por qué elegirnos?</h2>
+    <div class="services__container">
+      <div class="services__item">
+        <img
+          class="services__item-icon"
+          src="/public/images/experiencia.svg"
+          alt="icon"
+        />
+        <p class="services__item-title">Experiencia</p>
+        <p class="services__item-desc">
+          Somos consultoría de referencia en el desconocido mundo energético,
+          sector en constante transformación y presente en nuestro día a día.
+        </p>
+      </div>
+
+      <div class="services__item">
+        <img
+          class="services__item-icon"
+          src="/public/images/asesoramiento.svg"
+          alt="icon"
+        />
+        <p class="services__item-title">Asesoramiento personalizado</p>
+        <p class="services__item-desc">
+          Damos una solución totalmente adaptada a tus necesidades energéticas.
+        </p>
+      </div>
+
+      <div class="services__item">
+        <img
+          class="services__item-icon"
+          src="/public/images/eficiencia.svg"
+          alt="icon"
+        />
+        <p class="services__item-title">Eficiencia</p>
+        <p class="services__item-desc">
+          Te proporcionamos la tranquilidad de saber que utilizas la energía más
+          eficiente.
+        </p>
+      </div>
+
+      <div class="services__item">
+        <img
+          class="services__item-icon"
+          src="/public/images/sostenibilidad.svg"
+          alt="icon"
+        />
+        <p class="services__item-title">Sostenibilidad</p>
+        <p class="services__item-desc">
+          Ayudamos a crear una infraestructura respetuosa con el medio ambiente.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="s m-bottom-3">
+    <h2 class="s__title">¿Qué servicio te interesa?</h2>
+    <div class="s__select-container">
+      <select class="s__select">
+        <option value="">algo</option>
+        <option value="">este mes</option>
+        <option value="">mañana</option>
+      </select>
+    </div>
+  </section>
+
+  <div class="dudas m-bottom-3">
+    <div class="dudas__img-container">
+      <img class="dudas__img" src="/public/images/solar2.jpg" alt="solar" />
+    </div>
+
+    <div class="dudas__content">
+      <h2 class="dudas__title">¿Tienes dudas?</h2>
+      <p class="dudas__desc">
+        Si deseas hacernos alguna pregunta, conocer más acerca de nuestros
+        servicios o que te enviemos un presupuesto sin compromiso alguno
+        adaptado a ti, no dudes en contactar con nosotros.
+      </p>
+      <a href="#" class="btn btn-primary">CONTACTO</a>
+    </div>
+  </div>
+
+  {#
+  <section class="clients">
+    <h2 class="clients__title">Nuestro clientes</h2>
+    <div class="clients__images">
+      <img
+        class="clients__image"
+        src="/public/images/labradores.png"
+        alt="labradores"
+      />
+      <img class="clients__image" src="/public/images/cecsa.png" alt="cecsa" />
+      <img class="clients__image" src="/public/images/print.png" alt="print" />
+    </div>
+  </section>
+  #}
+</main>
+{% endblock %}

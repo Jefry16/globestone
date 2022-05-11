@@ -1,0 +1,16 @@
+@each $key, $val in $colors {
+  .text-#{$key} {
+    color: $val;
+  }
+
+  .bg-#{$key} {
+    background-color: $val;
+  }
+
+  .bg-#{$key}-hover{
+    &:hover {
+      background-color: darken($val, 20);
+    }
+  }
+}
+ 

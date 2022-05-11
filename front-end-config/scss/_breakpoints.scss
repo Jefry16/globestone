@@ -1,0 +1,58 @@
+$break-points: (
+  "xs": 0px,
+  "sm": 480px,
+  "fe": 580px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1200px,
+);
+
+$break-points-2: (
+  3rem: 420px,
+  4rem: 500px,
+  5rem: 662px,
+  6rem: 830px,
+  7rem: 1000px,
+  8rem: 1152px,
+);
+@mixin xs {
+  @media (min-width: map-get($break-points, "xs")) {
+    @content;
+  }
+}
+
+@mixin sm {
+  @media (min-width: map-get($break-points, "sm")) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: map-get($break-points, "md")) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: map-get($break-points, "lg")) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: map-get($break-points, "xl")) {
+    @content;
+  }
+}
+
+@mixin fe {
+  @media (min-width: map-get($break-points, "fe")) {
+    @content;
+  }
+}
+
+@mixin mediaQuery($query) {
+  @media (min-width: $query) {
+    @content;
+  }
+}

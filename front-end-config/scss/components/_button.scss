@@ -1,0 +1,56 @@
+.btn {
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1.6rem;
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  border-radius: 4px;
+  display: inline-block;
+  color: #ffffff;
+}
+
+@each $key, $var in $colors {
+  .btn-#{$key} {
+    background-color: $var;
+    @if $var == #000000 {
+      color: #ffffff;
+    }
+
+    @if $var == #ffffff {
+      color: #000000;
+      border: 1px solid $black;
+    }
+  }
+}
+
+.btn-left {
+  margin-right: auto;
+}
+
+.btn-right {
+  margin-left: auto;
+}
+
+.btn-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn-block {
+  display: block;
+}
+
+.link {
+  font-family: $roboto;
+  font-size: 1.6rem;
+  text-decoration: underline;
+  font-weight: bold;
+  color: $black;
+  &:hover {
+    text-decoration: none;
+  }
+  &:active {
+    text-decoration: none;
+  }
+}

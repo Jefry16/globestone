@@ -1,0 +1,21 @@
+$primary: #748b30;
+$secondary: #fae345;
+$white: #ffffff;
+$black: #000000;
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "white": $white,
+  "black": $black,
+);
+
+$box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+$base-padding: 2rem;
+
+$max-width: 140rem;
+
+$roboto: "Roboto", sans-serif;
+$playfair: "Playfair Display", serif;
+$base-margin: 4rem;
