@@ -1,0 +1,78 @@
+{% extends 'base.html' %} {% block content %}
+<main class="contact">
+  <h1 class="contact__title">Te asesoramos de forma personalizada.</h1>
+  <p class="contact__p">
+    Estudiamos las características de tu negocio o vivienda para ofrecerte la
+    solución óptima que te permita obtener el mayor ahorro.
+  </p>
+  <p class="contact__p">
+    Ponte en contacto con nosotros para comenzar a trabajar juntos en un mundo
+    más sostenible y eficiente.
+  </p>
+  <img src="/public/images/random.svg" alt="random" />
+
+  <div class="form-container">
+    <h2 class="title">Contacta con nosotros</h2>
+    <div class="socials">
+      <p>
+        <img src="/public/images/a1.svg" alt="icon one" />Bartolomé de Medina,
+        7, Bajo, 41004, Sevilla.
+      </p>
+      <p>
+        <img src="/public/images/a3.svg" alt="icon three" />info@globestone.es
+      </p>
+      <p><img src="/public/images/a2.svg" alt="icon two" />(+34) 649 984 123</p>
+    </div>
+    <p class="r">También puedes dejarnos tus datos y te llamaremos.</p>
+    <form action="">
+      <div class="inputs">
+        <div class="input">
+          <input class="text" type="text" name="name" placeholder="Nombre" />
+        </div>
+        <div class="input">
+          <input class="text" type="text" name="name" placeholder="Apellidos" />
+        </div>
+        <div class="input">
+          <input class="text" type="text" name="name" placeholder="Teléfono" />
+        </div>
+        <div class="input">
+          <input class="text" type="text" name="name" placeholder="Mail" />
+        </div>
+        <div class="input">
+          <input class="text" type="text" name="name" placeholder="Provincia" />
+        </div>
+      </div>
+
+      <p>¿Qué servicios te interesan?</p>
+      <div class="checks">
+        <div class="checkbox">
+          <label class="label">
+            <input type="checkbox" name="service" />
+            <span class="checkmark"></span>
+            <span class="text">Tejas solares </span>
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label class="label">
+            <input type="checkbox" name="service" />
+            <span class="checkmark"></span>
+            <span class="text">Tejas solares </span>
+          </label>
+        </div>
+
+        <div class="checkbox">
+          <label class="label">
+            <input type="checkbox" name="service" />
+            <span class="checkmark"></span>
+            <span class="text">Tejas solares </span>
+          </label>
+        </div>
+      </div>
+
+      <textarea class="textarea" name="" placeholder="Mensaje"></textarea>
+      <input type="submit" value="Enviar" class="btn btn-primary btn-block btn-right">
+    </form>
+  </div>
+</main>
+{% endblock %}

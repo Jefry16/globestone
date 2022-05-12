@@ -16,12 +16,13 @@ body {
 }
 p {
   font-size: 2rem;
+  color: $grey35;
 }
 .container {
   width: 100%;
   max-width: 120rem;
   margin: 0 auto;
-} 
+}
 
 a {
   text-decoration: none;
@@ -31,4 +32,78 @@ img,
 picture {
   width: 100%;
   display: block;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: $grey35;
+}
+
+.input {
+  border: 2px solid #748b30;
+  min-width: 26.4rem;
+  height: 4.8rem;
+  .text,
+  .password {
+    border: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 1.7rem;
+    padding-left: 1.6rem;
+    font-weight: bold;
+    font-family: "Noto Serif", serif;
+  }
+}
+
+.checkbox {
+  cursor: pointer;
+
+  .label {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+  }
+
+  .text {
+    font-size: 1.7rem;
+    font-family: "Noto Serif", serif;
+  }
+
+  .checkmark {
+    width: 3.2rem;
+    height: 3.2rem;
+    border: 2px solid $primary;
+    display: inline-block;
+  }
+
+  [type="checkbox"]:checked + .checkmark {
+    background-image: url("../../public/images/checkbox.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  [type="checkbox"]:hover + .checkmark {
+    background-image: url("../../public/images/checkbox.svg");
+  }
+
+  [type="checkbox"]:active + .checkmark {
+    background-image: url("../../public/images/checkbox.svg");
+  }
+  [type="checkbox"] {
+    display: none;
+  }
+}
+
+.textarea {
+  font-size: 1.7rem;
+  padding: 1.6rem;
+  font-weight: bold;
+  font-family: "Noto Serif", serif;
+  border: 2px solid #748b30;
+  display: block;
+  width: 100%;
+  height: 13.2rem;
 }

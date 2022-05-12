@@ -30,5 +30,9 @@
         width: 3rem;
       }
     }
+    .activeLink{
+      border-bottom: 3px solid $secondary;
+      padding: 1rem;
+    }
   }
 }

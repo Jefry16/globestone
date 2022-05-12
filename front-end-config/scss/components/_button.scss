@@ -8,6 +8,7 @@
   border-radius: 4px;
   display: inline-block;
   color: #ffffff;
+  height: 3.8rem;
 }
 
 @each $key, $var in $colors {
@@ -39,18 +40,4 @@
 
 .btn-block {
   display: block;
-}
-
-.link {
-  font-family: $roboto;
-  font-size: 1.6rem;
-  text-decoration: underline;
-  font-weight: bold;
-  color: $black;
-  &:hover {
-    text-decoration: none;
-  }
-  &:active {
-    text-decoration: none;
-  }
 }

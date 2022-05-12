@@ -9,6 +9,15 @@
       font-size: 2.6rem;
       line-height: 1.2;
     }
+
+    &__subtitle {
+      margin: 2rem 0;
+    }
+    &__desc {
+      font-size: 1.7rem;
+      font-family: "Noto Serif", serif;
+      font-weight: 600;
+    }
   }
   .us {
     &__title {
@@ -57,16 +66,15 @@
     }
   }
 
-  .r{
+  .r {
     padding: 4rem;
-    &__title{
+    &__title {
       line-height: 1.2;
       color: $primary;
       font-size: 2.2rem;
       font-family: "Montserrat", sans-serif;
-
     }
-    &__btn{
+    &__btn {
       margin: 2rem 0;
     }
   }

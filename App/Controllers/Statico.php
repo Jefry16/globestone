@@ -17,4 +17,9 @@ class Statico extends Controller
     {
         View::renderTemplate('Frontend/about.html');
     }
+
+    public function contactoAction()
+    {
+        View::renderTemplate('Frontend/contacto.html');
+    }
 }
