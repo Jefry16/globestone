@@ -25,6 +25,13 @@
   }
 }
 
+.btn-primary {
+  &:hover {
+    background-color: #d1d8ba;
+    color: #748B30;
+  }
+}
+
 .btn-left {
   margin-right: auto;
 }
