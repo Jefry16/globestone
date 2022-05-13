@@ -10,6 +10,24 @@
     font-size: 1.7rem;
     font-weight: 600;
     font-family: "Noto Serif", serif;
+    & + img{
+      margin: 4rem 0;
+    }
+  }
+
+  .checks {
+    .header {
+      font-family: "Noto Serif", serif;
+      font-size: 1.7rem;
+      font-weight: bold;
+      padding: 0;
+    }
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-bottom: 2rem;
+    }
   }
 
   .socials {
@@ -39,6 +57,10 @@
       font-size: 2.2rem;
       text-align: center;
     }
+
+    [type="submit"] {
+      margin-top: 2rem;
+    }
   }
   .r {
     text-align: center;
@@ -48,5 +70,44 @@
     display: flex;
     flex-direction: column;
     gap: 2rem;
+  }
+}
+
+.whatsapp {
+  background-color: $primary;
+  margin: 4rem 0rem;
+  padding: 4rem;
+  img {
+    width: 4rem;
+    height: 4rem;
+    margin: 0 auto;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    line-height: 1.2;
+    font-weight: bold;
+    color: $secondary;
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
+
+.more-socials {
+  p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.2rem;
+    color: $primary;
+    font-weight: bold;
+    line-height: 1.2;
+    padding: 3.3rem;
+  }
+  .socials {
+    padding: 0 3.3rem 3.3rem;
+    display: flex;
+    gap: 3rem;
+    img{
+      width: 4rem;
+    }
   }
 }
