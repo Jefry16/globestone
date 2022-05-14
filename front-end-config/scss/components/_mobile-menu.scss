@@ -1,4 +1,6 @@
 .mobilemenu {
+  position: relative;
+  z-index: 10;
   display: none;
   background-color: $primary;
   width: 100%;

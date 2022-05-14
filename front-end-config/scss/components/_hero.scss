@@ -1,13 +1,32 @@
 .hero {
   height: 25.7rem;
   padding: 1.7rem 2.7rem 0;
-  background-image: url("../../public/images/solar.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba($grey35, .5);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  video {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    object-fit: fill;
+  }
   &__title {
+    position: relative;
+    z-index: 1;
     font-size: 2.2rem;
-    line-height: 1.2;
+    line-height: 1;
     color: $white;
     font-family: "Montserrat", sans-serif;
     margin: 0;
@@ -15,6 +34,7 @@
     @include md {
       font-size: 4rem;
       max-width: 67.4rem;
+      font-weight: 800;
     }
     @include lg {
       font-size: 6rem;
@@ -22,6 +42,8 @@
     }
   }
   &__desc {
+    position: relative;
+    z-index: 1;
     line-height: 1.2;
     color: $white;
     font-family: "Noto Serif", serif;
@@ -40,9 +62,13 @@
 
   @include md {
     height: 40rem;
+    padding: 4.7rem;
   }
 
   @include lg {
     height: 88vh;
+  }
+  @include xl{
+    padding: 10rem 8rem 0rem;
   }
 }
