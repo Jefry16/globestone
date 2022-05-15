@@ -43,7 +43,22 @@
       width: 3rem;
     }
   }
-  .closemenu, .homelink{
-      cursor: pointer;
+  .closemenu,
+  .homelink {
+    cursor: pointer;
+  }
+
+  .mobile-services {
+    display: none;
+    list-style-type: none;
+    padding-left: 5.2rem;
+    flex-direction: column;
+    gap: 2rem;
+
+    li {
+      color: $white;
+      font-family: "Noto Sans", sans-serif;
+      font-size: 1.4rem;
+    }
   }
 }
