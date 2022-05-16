@@ -1,17 +1,8 @@
-const services = [
-  { name: "PLACAS SOLARES", images: "" },
-  { name: "SOLAR FLOTANTE", images: "" },
-  { name: "AGRICULTURA FOTOVOLTAICA", images: "" },
-  { name: "TEJAS SOLARES", images: "" },
-  { name: "LAND SCOUTING", images: "" },
-  { name: "MODULAR", images: "" },
-  { name: "ALMACENAMIENTO INTELIGENTE", images: "" },
-  { name: "PUNTOS RECARGA VEHÍCULOS", images: "" },
-];
-export function renderServices() {
-  const container = document.querySelector(".list");
+export async function renderServices() {
+  const container = document.querySelector(".home .list");
 
   if (container) {
+    const data = await fetch("/public/js/services.json");
     let content = "";
     for (const s of services) {
       content += `<div class="list__item"><h2>${s.name}</h2></div>`;
