@@ -1,0 +1,73 @@
+.service {
+  .row {
+    padding: 0 3.5rem;
+    .description {
+      font-size: 1.7rem;
+      font-weight: 600;
+      font-family: "Noto Serif", serif;
+    }
+    .cta {
+      margin: 2rem 0rem;
+    }
+  }
+  h1 {
+    color: $primary;
+    font-size: 2.6rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+  }
+
+  .why {
+    padding: 0 3.5rem;
+    &__desc {
+      font-size: 1.7rem;
+      font-weight: 600;
+      font-family: "Noto Serif", serif;
+    }
+  }
+
+  .title {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 2.2rem;
+  }
+
+  .ventajas {
+    padding: 0 5rem;
+    margin: 0 auto;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.7rem;
+    list-style-image: url("../../public/images/iconli.svg");
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    li {
+      //   list-style-position: inside;
+    }
+  }
+
+  .fabric {
+    padding: 0 3.5rem;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 1.7rem;
+  }
+
+//   .first-content {
+//     @include lg {
+//       background-color: aquamarine;
+//       width: 100%;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       .row {
+//         width: 50%;
+        
+//       }
+//       .main-image-container {
+//         width: 50%;
+//         background-color: firebrick;
+//       }
+//     }
+//   }
+}

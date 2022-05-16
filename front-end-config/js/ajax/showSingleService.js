@@ -9,7 +9,7 @@ export async function showSingleService() {
     const pageContainer = document.querySelector(".service");
 
     if (service) {
-      pageContainer.querySelector(".title").textContent =
+      pageContainer.querySelector("h1").textContent =
         service.title.charAt(0).toUpperCase() + service.title.slice(1);
 
       pageContainer.querySelector(".description").textContent =
@@ -24,9 +24,16 @@ export async function showSingleService() {
 
       pageContainer.querySelector(".why .why__desc").textContent = service.why;
 
-      pageContainer
-        .querySelector(".slide img")
-        .setAttribute("src", "/public/images/" + service.slide[0].i);
+      let slideCount = 1;
+      setInterval(() => {
+        pageContainer
+          .querySelector(".slide img")
+          .setAttribute("src", "/public/images/" + service.slide[slideCount].i);
+        slideCount++;
+        if (slideCount >= service.slide.length) {
+          slideCount = 0;
+        }
+      }, 3000);
       let ventajas = "";
       service.v.forEach((v) => {
         ventajas += `<li>${v}</li>`;
@@ -35,6 +42,7 @@ export async function showSingleService() {
       pageContainer.querySelector(".ventajas").innerHTML = ventajas;
 
       pageContainer.querySelector(".fab").textContent = service.fab;
+      console.log(service.slide);
     }
   }
 }
