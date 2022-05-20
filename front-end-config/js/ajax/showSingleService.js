@@ -2,7 +2,8 @@ export async function showSingleService() {
   const route = location.pathname.split("/");
 
   if (route[0] === "" && route[1] === "servicios") {
-    const data = await fetch("/public/data/servicios.json");
+    console.log(data);
+    const data = await fetch("/public/data/services.json");
     const dataAsJson = await data.json();
     const title = route[2].split("-").join(" ");
     const service = dataAsJson.find((s) => s.title === title);
@@ -17,7 +18,7 @@ export async function showSingleService() {
 
       pageContainer
         .querySelector(".main-image-container img")
-        .setAttribute("src", "/public/images/" + service.main + ".png");
+        .setAttribute("src", "/public/images/" + service.main);
 
       pageContainer.querySelector(".why .why__title").textContent +=
         service.title + "?";

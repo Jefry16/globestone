@@ -72,8 +72,11 @@
 
   @include lg {
     height: 88vh;
+    margin-bottom: 4rem;
   }
   @include xl {
     padding: 10rem 8rem 0rem;
+    margin-bottom: 8rem;
+
   }
 }

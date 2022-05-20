@@ -1,78 +1,5 @@
 [
   {
-    "copy": "lonelighthouse",
-    "title": "solar flotante",
-    "description": [
-      "Es una de las tecnologías de estructura flotante más utilizada en el mundo, se implementa en depósitos, reservas de agua, canales de riego, presas, etc.",
-      "Esta solución permite utilizar un mismo terreno para dos fines de forma que su eficiencia se optimiza al máximo."
-    ],
-    "why": "Perfecta para industrias o comunidades de regantes que deseen disminuir su impacto en el medio ambiente de manera eficiente, sacando el máximo partido a sus terrenos y aumentando su ahorro energético.",
-    "v": [
-      "Producción de energía limpia.",
-      "Resistencia a condiciones climáticas extremas.",
-      "Respeto hacia el medio ambiente y la calidad del agua.",
-      "Optimización de la producción (enfriamiento de paneles).",
-      "Diseño económicamente coherente con la competitividad del mercado fotovoltaico.",
-      "Preservación del recurso hídrico al reducir el efecto de evaporación.",
-      "Sistema de rápida y fácil instalación."
-    ],
-    "fab": "Akuo® fabrica y distribuye la innovadora solución de estructura flotante HYDRELIO® de Solar Flotante desarrollada por la empresa francesa Ciel & Terre©. Akuo ha lanzado la construcción de O’MEGA 1, la primera planta solar flotante de Francia y la más poderosa de Europa.",
-    "main": "mainflotantelone.jpg",
-    "slide": [
-      {
-        "i": "flotantelonea.jpg",
-        "copy": "lonelighthouse"
-      },
-      {
-        "i": "flotantecielb.jpg",
-        "copy": "cieletterre"
-      },
-      {
-        "i": "flotantecielc.jpg",
-        "copy": "cieletterre"
-      }
-    ]
-  },
-  {
-    "copy": "lonelighthouse",
-    "title": "agricultura fotovoltaica",
-    "description": [
-      "Agrienergie® supone la combinación inteligente de agricultura y producción de energía en un mismo proyecto.",
-      "Se trata de instalar paneles solares en aquel lugar donde se producen los cultivos."
-    ],
-    "why": "Se genera energía limpia al tiempo que se respeta la actividad agraria, ya que se selecciona la estructura que mejor se adapta al tipo de cultivo. Innovación y eficiencia para el sector más esencial de todos.",
-    "v": [
-      "Producción de energía limpia.",
-      "Dos actividades en una única solución.",
-      "Ideal tanto para el autoconsumo como para la venta de energía renovable.",
-      "Estructuras que se adaptan al tipo de cultivo."
-    ],
-    "fab": "Esta solución fue creada en 2007 por el grupo Akuo Energy para evitar que las empresas agrarias tuvieran que usar parte de sus terrenos en paneles solares, perdiendo así tierra para el cultivo.",
-    "main": "mainagrolone.jpg",
-    "slide": [
-      {
-        "i": "agrolonea.jpg",
-        "copy": "lonelighthouse"
-      },
-      {
-        "i": "agroakuob.jpg",
-        "copy": "akuo"
-      },
-      {
-        "i": "agroakuoc.jpg",
-        "copy": "akuo"
-      },
-      {
-        "i": "agroakuod.jpg",
-        "copy": "akuo"
-      },
-      {
-        "i": "agrolonee.jpg",
-        "copy": "lonelighthouse"
-      }
-    ]
-  },
-  {
     "copy": "",
     "title": "tejas solares",
     "description": [
@@ -119,6 +46,79 @@
   },
   {
     "copy": "",
+    "title": "autoconsumo",
+    "description": [
+      "Ofrecemos soluciones de recarga para tu vehículo particular o de empresa y nos encargamos de todo, incluida la instalación."
+    ],
+    "why": "Consigue la independencia y el ahorro que ofrece un punto de recarga particular. Estudiamos tu necesidad y te ofrecemos la mejor solución. Además, te ayudamos con la gestión de subvenciones y otros programas.",
+    "v": [
+      "Te asesoramos en el Desarrollo Energético Sostenible Andalucía, Redes Inteligentes, Programa MOVES, etc.",
+      "Gestión íntegra de movilidad eléctrica.",
+      "Huella de carbono nula con el apoyo de energías renovables en la implantación de los puntos de recarga y con mayores porcentajes de incentivos.",
+      "Expertos en el despliegue de puntos de recarga tanto de uso individual como público, así como de su explotación y mantenimiento."
+    ],
+    "fab": "",
+    "main": "mainautoconsumo.jpg",
+    "slide": [
+      {
+        "i": "recargaa.jpg",
+        "copy": ""
+      },
+      {
+        "i": "recargab.jpg",
+        "copy": ""
+      },
+      {
+        "i": "recargac.jpg",
+        "copy": ""
+      },
+      {
+        "i": "recargad.jpg",
+        "copy": ""
+      },
+      {
+        "i": "recargae.jpg",
+
+        "copy": ""
+      }
+    ]
+  },
+  {
+    "copy": "lonelighthouse",
+    "title": "solar flotante",
+    "description": [
+      "Es una de las tecnologías de estructura flotante más utilizada en el mundo, se implementa en depósitos, reservas de agua, canales de riego, presas, etc.",
+      "Esta solución permite utilizar un mismo terreno para dos fines de forma que su eficiencia se optimiza al máximo."
+    ],
+    "why": "Perfecta para industrias o comunidades de regantes que deseen disminuir su impacto en el medio ambiente de manera eficiente, sacando el máximo partido a sus terrenos y aumentando su ahorro energético.",
+    "v": [
+      "Producción de energía limpia.",
+      "Resistencia a condiciones climáticas extremas.",
+      "Respeto hacia el medio ambiente y la calidad del agua.",
+      "Optimización de la producción (enfriamiento de paneles).",
+      "Diseño económicamente coherente con la competitividad del mercado fotovoltaico.",
+      "Preservación del recurso hídrico al reducir el efecto de evaporación.",
+      "Sistema de rápida y fácil instalación."
+    ],
+    "fab": "Akuo® fabrica y distribuye la innovadora solución de estructura flotante HYDRELIO® de Solar Flotante desarrollada por la empresa francesa Ciel & Terre©. Akuo ha lanzado la construcción de O’MEGA 1, la primera planta solar flotante de Francia y la más poderosa de Europa.",
+    "main": "mainflotantelone.jpg",
+    "slide": [
+      {
+        "i": "flotantelonea.jpg",
+        "copy": "lonelighthouse"
+      },
+      {
+        "i": "flotantecielb.jpg",
+        "copy": "cieletterre"
+      },
+      {
+        "i": "flotantecielc.jpg",
+        "copy": "cieletterre"
+      }
+    ]
+  },
+  {
+    "copy": "",
     "title": "land scouting",
     "description": [
       "En Globestone somos especialistas en la búsqueda de terrenos para desarrollar plantas solares fotovoltaicas y plantas de Hidrógeno Verde.",
@@ -148,6 +148,46 @@
       }
     ]
   },
+  {
+    "copy": "lonelighthouse",
+    "title": "agricultura fotovoltaica",
+    "description": [
+      "Agrienergie® supone la combinación inteligente de agricultura y producción de energía en un mismo proyecto.",
+      "Se trata de instalar paneles solares en aquel lugar donde se producen los cultivos."
+    ],
+    "why": "Se genera energía limpia al tiempo que se respeta la actividad agraria, ya que se selecciona la estructura que mejor se adapta al tipo de cultivo. Innovación y eficiencia para el sector más esencial de todos.",
+    "v": [
+      "Producción de energía limpia.",
+      "Dos actividades en una única solución.",
+      "Ideal tanto para el autoconsumo como para la venta de energía renovable.",
+      "Estructuras que se adaptan al tipo de cultivo."
+    ],
+    "fab": "Esta solución fue creada en 2007 por el grupo Akuo Energy para evitar que las empresas agrarias tuvieran que usar parte de sus terrenos en paneles solares, perdiendo así tierra para el cultivo.",
+    "main": "mainagrolone.jpg",
+    "slide": [
+      {
+        "i": "agrolonea.jpg",
+        "copy": "lonelighthouse"
+      },
+      {
+        "i": "agro<p>ok</p>akuob.jpg",
+        "copy": "akuo"
+      },
+      {
+        "i": "agroakuoc.jpg",
+        "copy": "akuo"
+      },
+      {
+        "i": "agroakuod.jpg",
+        "copy": "akuo"
+      },
+      {
+        "i": "agrolonee.jpg",
+        "copy": "lonelighthouse"
+      }
+    ]
+  },
+
   {
     "copy": "lonelighthouse",
     "title": "sistema modular",
