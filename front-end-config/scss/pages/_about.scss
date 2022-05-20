@@ -1,22 +1,70 @@
 .about {
   .intro {
+    &__img-container {
+      flex-basis: 50%;
+      img {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
     &__content {
       padding: 5rem;
+      @include lg {
+        flex-basis: 50%;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+      }
+
+      @include xl {
+        padding: 0 3rem;
+      }
+      // @include xxl {
+      //   padding: 0 5rem;
+      // }
     }
     &__title {
       color: $primary;
       font-family: "Montserrat", sans-serif;
       font-size: 2.6rem;
       line-height: 1.2;
+      @include lg {
+        font-size: 3.6rem;
+        margin: 0;
+      }
+
+      @include xl {
+        font-size: 5rem;
+      }
+      @include xxl {
+        font-size: 6rem;
+      }
     }
 
     &__subtitle {
       margin: 2rem 0;
+      @include lg {
+        font-size: 3.6rem;
+        margin: 0;
+      }
+
+      @include xl {
+        font-size: 4rem;
+      }
     }
     &__desc {
       font-size: 1.7rem;
       font-family: "Noto Serif", serif;
       font-weight: 600;
+    }
+
+    @include lg {
+      display: flex;
+      height: 45rem;
+      justify-content: center;
+      gap: 2rem;
     }
   }
   .us {
@@ -78,4 +126,5 @@
       margin: 2rem 0;
     }
   }
+
 }

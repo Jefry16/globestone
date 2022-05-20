@@ -1,0 +1,22 @@
+[
+  {
+    "logo": "akuo.png",
+    "desc": "Akuo Energy es un fabricante francés pionero en algunas de las soluciones de energías renovables más innovadoras del mercado."
+  },
+  {
+    "logo": "sun.png",
+    "desc": "SunStyle es una compañía internacional que fabrica y distribuye tejados solares desde 2007."
+  },
+  {
+    "logo": "ciel.png",
+    "desc": "Ciel et Terre es una empresa francesa especializada en la comercialización de paneles solares flotantes."
+  },
+  {
+    "logo": "lone.png",
+    "desc": "Lone Lighthouse es una empresa española especializada en la distribución de energía verde."
+  },
+  {
+    "logo": "inercia.png",
+    "desc": "Inercia es una empresa española que ofrece principalmente soluciones energéticas de autoconsumo en diferentes sectores."
+  }
+]
