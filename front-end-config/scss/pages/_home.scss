@@ -6,7 +6,7 @@
       text-align: center;
       font-family: "Montserrat", sans-serif;
       font-size: 2.2rem;
-      @include lg{
+      @include lg {
         font-size: 4rem;
       }
     }
@@ -63,7 +63,7 @@
       text-align: center;
       font-family: "Montserrat", sans-serif;
       font-size: 2.2rem;
-      @include lg{
+      @include lg {
         font-size: 4rem;
       }
     }
@@ -106,7 +106,7 @@
     &__title {
       font-family: "Montserrat", sans-serif;
       font-size: 2.2rem;
-      @include lg{
+      @include lg {
         font-size: 4rem;
       }
     }
@@ -150,5 +150,67 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
     }
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0 1rem;
+
+    .link {
+      display: block;
+      width: 100%;
+
+    }
+    &__item {
+      box-shadow: 5px 5px 6px #00000029;
+      cursor: pointer;
+      min-width: 30rem;
+      width: 100%;
+      height: 10rem;
+      position: relative;
+      overflow: hidden;
+      &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 70%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: transparent
+          linear-gradient(0deg, #353535 0%, #7878781a 100%);
+        opacity: 0.4;
+      }
+      @include md {
+        height: 15rem;
+      }
+    }
+    &__item-title {
+      position: absolute;
+      bottom: 1rem;
+      text-align: center;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      width: 100%;
+      font-size: 2.2rem;
+      line-height: 1;
+      color: $white;
+      font-family: "Montserrat", sans-serif;
+      @include md {
+        bottom: 2rem;
+      }
+    }
+    &__item-img {
+      width: 100%;
+      height: 100%;
+      display: initial;
+      object-fit: cover;
+    }
+
   }
 }

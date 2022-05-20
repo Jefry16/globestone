@@ -2,7 +2,7 @@ export async function showSingleService() {
   const route = location.pathname.split("/");
 
   if (route[0] === "" && route[1] === "servicios") {
-    const data = await fetch("/public/js/servicios.json");
+    const data = await fetch("/public/data/servicios.json");
     const dataAsJson = await data.json();
     const title = route[2].split("-").join(" ");
     const service = dataAsJson.find((s) => s.title === title);
