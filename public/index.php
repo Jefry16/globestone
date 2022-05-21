@@ -29,6 +29,6 @@ $router = new Core\Router();
 $router->add('', ['controller' => 'Statico', 'action' => 'home']);
 $router->add('sobre-globe-stone', ['controller' => 'Statico', 'action' => 'sobreGlobeStone']);
 $router->add('contacto', ['controller' => 'Statico', 'action' => 'contacto']);
-$router->add('servicios/{title:[a-z-]+}', ['controller' => 'Statico', 'action' => 'services']);
+$router->add('servicios/{title:[a-zÁ-Ź-]+}', ['controller' => 'Statico', 'action' => 'services']);
 
 $router->dispatch($_SERVER['QUERY_STRING']);

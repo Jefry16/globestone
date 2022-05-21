@@ -1,14 +1,12 @@
 export async function showSingleService() {
-  const route = location.pathname.split("/");
+  const route = decodeURIComponent(location.pathname).split("/");
 
   if (route[0] === "" && route[1] === "servicios") {
-    console.log(data);
     const data = await fetch("/public/data/services.json");
     const dataAsJson = await data.json();
     const title = route[2].split("-").join(" ");
     const service = dataAsJson.find((s) => s.title === title);
     const pageContainer = document.querySelector(".service");
-
     if (service) {
       pageContainer.querySelector("h1").textContent =
         service.title.charAt(0).toUpperCase() + service.title.slice(1);
@@ -37,13 +35,12 @@ export async function showSingleService() {
       }, 3000);
       let ventajas = "";
       service.v.forEach((v) => {
-        ventajas += `<li>${v}</li>`;
+        ventajas += `<div><img src="/public/images/iconli.svg""> ${v}</div>`;
       });
 
       pageContainer.querySelector(".ventajas").innerHTML = ventajas;
 
       pageContainer.querySelector(".fab").textContent = service.fab;
-      console.log(service.slide);
     }
   }
 }

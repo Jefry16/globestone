@@ -11,7 +11,7 @@
       padding: 5rem;
       @include lg {
         flex-basis: 50%;
-        padding: 0;
+        padding-right: 6rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -29,7 +29,7 @@
       color: $primary;
       font-family: "Montserrat", sans-serif;
       font-size: 2.6rem;
-      line-height: 1.2;
+      line-height: 1;
       @include lg {
         font-size: 3.6rem;
         margin: 0;
@@ -44,10 +44,12 @@
     }
 
     &__subtitle {
+      line-height: 1;
       margin: 2rem 0;
       @include lg {
         font-size: 3.6rem;
         margin: 0;
+        margin-top: 2rem;
       }
 
       @include xl {
@@ -58,6 +60,7 @@
       font-size: 1.7rem;
       font-family: "Noto Serif", serif;
       font-weight: 600;
+      line-height: 1.2;
     }
 
     @include lg {
@@ -121,10 +124,89 @@
       color: $primary;
       font-size: 2.2rem;
       font-family: "Montserrat", sans-serif;
+      @include xl {
+        font-size: 3.6rem;
+      }
     }
     &__btn {
       margin: 2rem 0;
     }
+
+    &__content {
+      @include lg {
+        flex-basis: 50%;
+      }
+    }
+
+    &__img {
+      @include md {
+        max-width: 64rem;
+        margin: 2rem auto;
+      }
+      @include lg {
+        flex-basis: 50%;
+      }
+    }
+
+    @include lg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5rem;
+    }
+
+    @include xl {
+      max-width: 120rem;
+      margin: 0 auto;
+    }
   }
 
+  .socios {
+    margin-bottom: 4rem;
+    h2 {
+      font-family: "Montserrat", sans-serif;
+      font-size: 2.2rem;
+      text-align: center;
+      @include lg {
+        font-size: 4rem;
+      }
+    }
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      padding: 2rem;
+    }
+
+    .socio {
+      padding: 2.5rem;
+      box-shadow: 0px 3px 6px #00000029;
+      width: 30rem;
+      img {
+        width: 20rem;
+        margin: 0 auto 1rem;
+      }
+      p {
+        line-height: 1.2;
+        font-size: 1.7rem;
+        font-family: "Noto Sans", sans-serif;
+        width: 22rem;
+        margin: 0 auto;
+      }
+    }
+    @include lg {
+      margin-bottom: 8rem;
+    }
+    @include xl {
+      max-width: 120rem;
+      margin: 0 auto;
+      margin-bottom: 8rem;
+    }
+    @media (min-width: 1620px) {
+      max-width: unset;
+      margin: 0 auto;
+      margin-bottom: 8rem;
+    }
+  }
 }
