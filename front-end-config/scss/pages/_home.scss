@@ -188,8 +188,17 @@
     .link {
       display: block;
       width: 100%;
+      position: relative;
       @include lg {
         width: initial;
+      }
+      .copy {
+        font-family: "Noto Sans", sans-serif;
+        position: absolute;
+        left: 1rem;
+        top: 0;
+        color: $white;
+        font-size: 1.4rem;
       }
     }
     &__item {

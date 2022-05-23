@@ -18,6 +18,11 @@ export default function renderServicesOnHome() {
         <a class="link" href=/servicios/${s.title
           .split(" ")
           .join("-")}><div class="list__item">
+          <p class="copy">${
+            s.copy
+              ? "&copy;" + s.copy.charAt(0).toUpperCase() + s.copy.slice(1)
+              : ""
+          }</p>
         <h2 class="list__item-title">${formatTitle(s.title)}</h2>
         <img class="list__item-img" src="/public/images/${s.main}" alt="${
           s.title

@@ -10,9 +10,10 @@ export async function showSingleService() {
     if (service) {
       pageContainer.querySelector("h1").textContent =
         service.title.charAt(0).toUpperCase() + service.title.slice(1);
+      let description = "";
 
-      pageContainer.querySelector(".description").textContent =
-        service.description;
+      service.description.forEach((x) => (description += `<p>${x}</p>`));
+      pageContainer.querySelector(".description").innerHTML = description;
 
       pageContainer
         .querySelector(".main-image-container img")
@@ -28,6 +29,11 @@ export async function showSingleService() {
         pageContainer
           .querySelector(".slide img")
           .setAttribute("src", "/public/images/" + service.slide[slideCount].i);
+        const copy = service.slide[slideCount].copy;
+        pageContainer.querySelector(".slide p").innerHTML = ` ${
+          "&copy;" + copy.charAt(0).toUpperCase() + copy.slice(1)
+        }`;
+
         slideCount++;
         if (slideCount >= service.slide.length) {
           slideCount = 0;
@@ -35,12 +41,16 @@ export async function showSingleService() {
       }, 3000);
       let ventajas = "";
       service.v.forEach((v) => {
-        ventajas += `<div><img src="/public/images/iconli.svg""> ${v}</div>`;
+        ventajas += `<div class="item"><img class="iconlist" src="/public/images/iconli.svg""> <p>${v}</p></div>`;
       });
 
       pageContainer.querySelector(".ventajas").innerHTML = ventajas;
-
       pageContainer.querySelector(".fab").textContent = service.fab;
+
+      if (!service.fab.trim().length > 0) {
+        pageContainer.querySelector(".fab-title").remove();
+        pageContainer.querySelector(".fab").remove();
+      }
     }
   }
 }
