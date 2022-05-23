@@ -1,18 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{% block title %}Globestone {% endblock %}</title>
-    <script src="/js/main.js" defer></script>
-  </head>
-  <body>
-    {{ include('./Themes/header-mobile.html') }}
-    {{ include('./Themes/header.html') }}
-    {{ include('./Themes/mobile-menu.html') }}
-     {% block content %}{% endblock %}
-    {{ include('./Themes/footer.html') }}
+<head></head>
 
-  </body>
+<meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>
+	{% block title %}Globestone
+	{% endblock %}
+</title>
+<script src="/js/main.js" defer></script></head><body></body>
+
+{% for item in messages %}
+	<div class="">{{item.message }}</div>
+{% endfor %}
+{{ include('./Themes/header-mobile.html') }}{{
+    include('./Themes/header.html') }}{{ include('./Themes/mobile-menu.html')
+    }}
+{% block content %}{% endblock %}
+{{ include('./Themes/footer.html') }}
+
+
+</body>
+
 </html>

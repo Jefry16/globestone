@@ -1,4 +1,5 @@
 .h-desktop {
+  position: relative;
   display: none;
   @include xl {
     display: flex;
@@ -7,7 +8,7 @@
     padding: 2rem 4rem;
 
     &__logo {
-      width: 30rem;
+      width: 20rem;
     }
     &__links {
       display: flex;
@@ -30,9 +31,36 @@
         width: 3rem;
       }
     }
-    .activeLink{
+    .activeLink {
       border-bottom: 3px solid $secondary;
-      padding: 1rem;
+      padding: 0;
+    }
+  }
+
+  .desktop-services {
+    background-color: #f7f7f7;
+
+    border-bottom: 1rem solid $secondary;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    list-style: none;
+    align-items: flex-start;
+    width: 100%;
+    bottom: -24rem;
+    z-index: 10;
+    left: 0;
+    padding: 0 0 2rem 53%;
+
+    &__service {
+      font-size: 1.6rem;
+      font-family: "Noto Sans", sans-serif;
+      a {
+        color: $primary;
+        &:hover {
+          border-bottom: 2px solid $secondary;
+        }
+      }
     }
   }
 }
