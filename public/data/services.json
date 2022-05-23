@@ -48,40 +48,28 @@
     "copy": "",
     "title": "autoconsumo",
     "description": [
-      "Ofrecemos soluciones de recarga para tu vehículo particular o de empresa y nos encargamos de todo, incluida la instalación."
+      "En Globestone hacemos un estudio pormenorizado de tus necesidades energéticas y te proponemos la mejor solución y la más eficiente."
     ],
-    "why": "Consigue la independencia y el ahorro que ofrece un punto de recarga particular. Estudiamos tu necesidad y te ofrecemos la mejor solución. Además, te ayudamos con la gestión de subvenciones y otros programas.",
-    "v": [
-      "Te asesoramos en el Desarrollo Energético Sostenible Andalucía, Redes Inteligentes, Programa MOVES, etc.",
-      "Gestión íntegra de movilidad eléctrica.",
-      "Huella de carbono nula con el apoyo de energías renovables en la implantación de los puntos de recarga y con mayores porcentajes de incentivos.",
-      "Expertos en el despliegue de puntos de recarga tanto de uso individual como público, así como de su explotación y mantenimiento."
+    "why": "Ofrecemos soluciones para tu vivienda o negocio desarrollando una gestión integral de todo lo necesario: desde el estudio energético y financiero, la gestión de posibles subvenciones, la oferta de soluciones de almacenamiento y la instalación hasta, por supuesto, la atención personalizada para resolver todas tus dudas e inquietudes.",
+    "paraNegocio": [
+      "Ahorro energético y financiero.",
+      "Gestión de subvenciones.",
+      "Revalorización del activo inmobiliario.",
+      "Aumento de la competitividad frente a otras empresas.",
+      "Consumo inteligente y tecnología de innovación.",
+      "Opciones de almacenamiento para sacarle el máximo partido."
     ],
-    "fab": "",
+    "paraVivienda": [
+      "Ahorro en el gasto de luz de tu vivienda.",
+      "Gestión de subvenciones.",
+      "Reducción del IBI de hasta un 50%.",
+      "Eficiencia energética para tu hogar.",
+      "Consumo inteligente: podrás monitorizar tu consumo, ¡sin sorpresas!",
+      "Contribuir con un modo de energía sostenible y que respete el medio ambiente."
+    ],
     "main": "mainautoconsumo.jpg",
-    "slide": [
-      {
-        "i": "recargaa.jpg",
-        "copy": ""
-      },
-      {
-        "i": "recargab.jpg",
-        "copy": ""
-      },
-      {
-        "i": "recargac.jpg",
-        "copy": ""
-      },
-      {
-        "i": "recargad.jpg",
-        "copy": ""
-      },
-      {
-        "i": "recargae.jpg",
-
-        "copy": ""
-      }
-    ]
+    "second": "autoconsumoc.png",
+    "third": "paneles-solares.png"
   },
   {
     "copy": "lonelighthouse",
