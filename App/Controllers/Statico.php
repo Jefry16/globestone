@@ -33,4 +33,19 @@ class Statico extends Controller
         View::renderTemplate('Frontend/service.html');
     }
 
+    public function avisoLegalAction()
+    {
+        View::renderTemplate('Frontend/aviso-legal.html');
+    }
+
+    public function politicasDeCookiesAction()
+    {
+        View::renderTemplate('Frontend/politicas-cookies.html');
+    }
+
+    public function politicasDePrivacidadAction()
+    {
+        View::renderTemplate('Frontend/privacidad.html');
+    }
+
 }

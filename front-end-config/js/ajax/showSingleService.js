@@ -8,7 +8,7 @@ export async function showSingleService() {
     const service = dataAsJson.find((s) => s.title === title);
     const pageContainer = document.querySelector(".service");
     if (service && service.title != "autoconsumo") {
-      document.querySelector(".second-img-cont").remove();
+    document.querySelectorAll(".second-img-cont").forEach((x) => x.remove());
       pageContainer.querySelector("h1").textContent =
         service.title.charAt(0).toUpperCase() + service.title.slice(1);
       let description = "";

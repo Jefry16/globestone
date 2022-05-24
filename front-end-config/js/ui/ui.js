@@ -5,8 +5,12 @@ import { closeMenu } from "./close-menu.js";
 import { renderServices } from "./services.js";
 import { desktopMenuLinks } from "./desktop-menu-links.js";
 import { openServicesMobileMenu } from "./open-services-mobile-menu.js";
-import renderServicesOnHome from "./render-services.js";
+import renderServicesOnHome, {
+  toggleTextOnService,
+} from "./render-services.js";
 import { openServicesDesktopMenu } from "./open-desktop-menu.js";
+import dropDownService from "./dropdownServices.js";
+import { globalClick } from "./globalClick.js";
 
 export default function ui() {
   desktopMenuLinks();
@@ -18,4 +22,6 @@ export default function ui() {
   openServicesMobileMenu();
   openServicesDesktopMenu();
   renderServicesOnHome();
+  dropDownService();
+  globalClick();
 }
