@@ -23,7 +23,9 @@ class Statico extends Controller
     {
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $contactModel = new Contact($_POST);
-            $contactModel->save();
+            if ($contactModel->save()) {
+                $this->redirect('/');
+            }
         }
         View::renderTemplate('Frontend/contacto.html', ['errors' => $contactModel->errors ?? []]);
     }

@@ -1,5 +1,6 @@
 {% extends 'base.html' %} {% block content %}
 <main class="contact">
+
   <div class="contact__first">
     <div>
       <h1 class="contact__title">Te asesoramos de forma personalizada.</h1>
@@ -47,7 +48,10 @@
           <input class="text" type="text" name="email" placeholder="Mail" />
         </div>
         <div class="input">
-          <input class="text" type="text" name="province" placeholder="Provincia" />
+{# <input class="text" type="text" name="province" placeholder="Provincia" /> #}
+<select name="province" id="provinces" class="text"></select>
+
+
         </div>
       </div>
 
@@ -57,7 +61,9 @@
         <div class="checks__list">
           <div class="checkbox">
             <label class="label">
-              <input type="checkbox" name="service" />
+<input type="checkbox" name="service[]" value="Tejas solares"/>
+
+
               <span class="checkmark"></span>
               <span class="text">Tejas solares </span>
             </label>
@@ -65,7 +71,9 @@
 
           <div class="checkbox">
             <label class="label">
-              <input type="checkbox" name="service" />
+<input type="checkbox" name="service[]" value="Autoconsumo"/>
+
+
               <span class="checkmark"></span>
               <span class="text">Autoconsumo </span>
             </label>
@@ -73,7 +81,9 @@
 
           <div class="checkbox">
             <label class="label">
-              <input type="checkbox" name="service" />
+<input type="checkbox" name="service[]" value="Land scouting"/>
+
+
               <span class="checkmark"></span>
               <span class="text">Land scouting </span>
             </label>
@@ -81,7 +91,9 @@
 
           <div class="checkbox">
             <label class="label">
-              <input type="checkbox" name="service" />
+<input type="checkbox" name="service[]" value="Agricultura fotovoltaica"/>
+
+
               <span class="checkmark"></span>
               <span class="text">Agricultura fotovoltaica </span>
             </label>
@@ -89,7 +101,9 @@
 
           <div class="checkbox">
             <label class="label">
-              <input type="checkbox" name="service" />
+<input type="checkbox" name="service[]" value="Sistema modular"/>
+
+
               <span class="checkmark"></span>
               <span class="text">Sistema modular </span>
             </label>
@@ -97,7 +111,9 @@
 
           <div class="checkbox">
             <label class="label">
-              <input type="checkbox" name="service" />
+<input type="checkbox" name="service[]" value="Almacenamiento inteligente"/>
+
+
               <span class="checkmark"></span>
               <span class="text">Almacenamiento inteligente </span>
             </label>
@@ -105,7 +121,9 @@
 
           <div class="checkbox">
             <label class="label">
-              <input type="checkbox" name="service" />
+<input type="checkbox" name="service[]" value="Punto de recarga de vehículos eléctricos"/>
+
+
               <span class="checkmark"></span>
               <span class="text"
                 >Punto de recarga de vehículos eléctricos
@@ -115,13 +133,17 @@
 
           <div class="checkbox">
             <label class="label">
-              <input type="checkbox" name="service" />
+<input type="checkbox" name="service[]" value="Solar flotante"/>
+
+
               <span class="checkmark"></span>
               <span class="text">Solar flotante </span>
             </label>
           </div>
         </div>
-        <textarea class="textarea" name="" placeholder="Mensaje"></textarea>
+<textarea class="textarea" name="message" placeholder="Mensaje"></textarea>
+
+
 
         <input
           type="submit"

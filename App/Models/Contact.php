@@ -20,8 +20,18 @@ class Contact extends \Core\Model
     {
         $this->validateBeforeSaving();
         if (empty($this->errors)) {
-            Message::set('Contacto enviado', Message::SUCCESS);
-            return 'true';
+
+            $sql = "INSERT INTO contacto (name, lastname, phone, email, province, services, message) VALUES (:name, :lastname, :phone, :email, :province, :services, :message)";
+            $db = static::getDB();
+            $stmt = $db->prepare($sql);
+            $stmt->bindValue(':name', $this->name, PDO::PARAM_STR);
+            $stmt->bindValue(':lastname', $this->lastname, PDO::PARAM_STR);
+            $stmt->bindValue(':phone', $this->phone, PDO::PARAM_STR);
+            $stmt->bindValue(':email', $this->email, PDO::PARAM_STR);
+            $stmt->bindValue(':province', $this->province, PDO::PARAM_STR);
+            $stmt->bindValue(':services', implode(',', $this->service ?? []) ?? '', PDO::PARAM_STR);
+            $stmt->bindValue(':message', $this->message, PDO::PARAM_STR);
+            return $stmt->execute();
         }
         return  false;
     }
@@ -35,14 +45,17 @@ class Contact extends \Core\Model
     private function validateName()
     {
         if (trim($this->name) == '') {
-            $this->errors[] = 'El nombre es invalido';
+            $this->errors['name'] = 'El nombre es invalido';
+        }
+        if (trim($this->lastname) == '') {
+            $this->errors['lastname'] = 'El apellido es invalido';
         }
     }
 
     private function validatePhone()
     {
         if (trim($this->phone) == '') {
-            $this->errors[] = 'Número es invalido';
+            $this->errors['phone'] = 'El número es invalido';
         }
     }
 
