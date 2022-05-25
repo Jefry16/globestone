@@ -8,10 +8,13 @@ export default function dropDownService() {
     const container = document.querySelector(".s__select");
 
     if (container) {
-      let items = "<div id='opener'>Servicios ►</div>";
+      let items =
+        "<div id='opener'>Servicios <span class='green-caret'>►</span></div>";
       services.forEach(
         (s) =>
-          (items += `<div class="s__select-item">${formatTitle(s.title)}</div>`)
+          (items += `<div class="s__select-item"><a href='/servicios/${
+            s.url
+          }'>${formatTitle(s.title)}</a></div>`)
       );
       container.innerHTML = items;
 
@@ -20,10 +23,12 @@ export default function dropDownService() {
           console.log(x.style.display);
           if (x.style.display == "" || x.style.display == "none") {
             x.style.display = "block";
-            document.querySelector("#opener").textContent = "Servicios ▼";
+            document.querySelector("#opener").innerHTML =
+              "Servicios <span class='green-caret'>▼</span>";
           } else {
             x.style.display = "none";
-            document.querySelector("#opener").textContent = "Servicios ►";
+            document.querySelector("#opener").innerHTML =
+              "Servicios <span class='green-caret'>►</span></div>";
           }
         });
       });

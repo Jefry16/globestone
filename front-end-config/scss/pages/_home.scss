@@ -1,8 +1,6 @@
 .home {
   @import "../components/_hero.scss";
-  #opener {
-    cursor: pointer;
-  }
+ 
   .services {
     &__title {
       text-align: center;

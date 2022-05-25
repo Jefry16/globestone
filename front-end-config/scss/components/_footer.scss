@@ -25,6 +25,9 @@
     color: $white;
     font-weight: 600;
     font-size: 1.6rem;
+    a {
+      color: $white;
+    }
   }
 
   &__terms {
@@ -47,8 +50,10 @@
 
   .copy {
     text-align: center;
-    color: $secondary;
     font-weight: 600;
+    a {
+      color: $secondary;
+    }
   }
 
   .secs {

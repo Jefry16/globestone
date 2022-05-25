@@ -53,7 +53,7 @@
     list-style-type: none;
     padding-left: 5.2rem;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 
     li {
       color: $white;
@@ -63,6 +63,9 @@
         color: $white;
         font-family: "Noto Sans", sans-serif;
         font-size: 1.4rem;
+        &:active{
+          color: $secondary;
+        }
       }
     }
   }
