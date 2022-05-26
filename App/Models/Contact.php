@@ -41,28 +41,36 @@ class Contact extends \Core\Model
         $this->validateName();
         $this->validatePhone();
         $this->validateEmail();
+        $this->validateProvincia();
     }
     private function validateName()
     {
         if (trim($this->name) == '') {
-            $this->errors['name'] = 'El nombre es invalido';
+            $this->errors['name'] = 'Introduzca un nombre válido';
         }
         if (trim($this->lastname) == '') {
-            $this->errors['lastname'] = 'El apellido es invalido';
+            $this->errors['lastname'] = 'Introduzca un apellido válido';
         }
     }
 
     private function validatePhone()
     {
         if (trim($this->phone) == '') {
-            $this->errors['phone'] = 'El número es invalido';
+            $this->errors['phone'] = 'Introduzca un número válido';
         }
     }
 
     private function validateEmail()
     {
         if (filter_var($this->email, FILTER_VALIDATE_EMAIL) === false) {
-            $this->errors['email'] = 'Email invalido';
+            $this->errors['email'] = 'Email inválido';
+        }
+    }
+
+    private function validateProvincia()
+    {
+        if (trim($this->province) == '') {
+            $this->errors['province'] = 'Elija una provincia';
         }
     }
 }

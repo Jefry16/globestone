@@ -1,216 +1,219 @@
-{% extends 'base.html' %} {% block content %}
-<main class="contact">
+{% extends 'base.html' %}
+{% block content %}
+	<main class="contact">
 
-  <div class="contact__first">
-    <div>
-      <h1 class="contact__title">Te asesoramos de forma personalizada.</h1>
-      <p class="contact__p">
-        Estudiamos las características de tu negocio o vivienda para ofrecerte
-        la solución óptima que te permita obtener el mayor ahorro.
-      </p>
-      <br />
-      <p class="contact__p">
-        Ponte en contacto con nosotros para comenzar a trabajar juntos en un
-        mundo más sostenible y eficiente.
-      </p>
-    </div>
-    <img class="contact__i" src="/public/images/random.svg" alt="random" />
-  </div>
+		<div class="contact__first">
+			<div>
+				<h1 class="contact__title">Te asesoramos de forma personalizada.</h1>
+				<p class="contact__p">
+					Estudiamos las características de tu negocio o vivienda para ofrecerte
+					        la solución óptima que te permita obtener el mayor ahorro.
+				</p>
+				<br/>
+				<p class="contact__p">
+					Ponte en contacto con nosotros para comenzar a trabajar juntos en un
+					        mundo más sostenible y eficiente.
+				</p>
+			</div>
+			<img class="contact__i" src="/public/images/random.svg" alt="random"/>
+		</div>
 
-  <div class="form-container">
-    <div class="rowOne">
-      <h2 class="title">Contacta con nosotros</h2>
-      <div class="socials">
-        <p>
-          <img src="/public/images/a1.svg" alt="icon one" />Bartolomé de Medina,
-          7, Bajo, 41004, Sevilla.
-        </p>
-        <p>
-          <img src="/public/images/a3.svg" alt="icon three" />info@globestone.es
-        </p>
-        <p>
-          <img src="/public/images/a2.svg" alt="icon two" />(+34) 649 984 123
-        </p>
-      </div>
-    </div>
-    <form class="form" action="/contacto" method="POST">
-      <div class="inputs">
-        <div class="input">
-          <input class="text" type="text" name="name" placeholder="Nombre" />
-        </div>
-        <div class="input">
-          <input class="text" type="text" name="lastname" placeholder="Apellidos" />
-        </div>
-        <div class="input">
-          <input class="text" type="text" name="phone" placeholder="Teléfono" />
-        </div>
-        <div class="input">
-          <input class="text" type="text" name="email" placeholder="Mail" />
-        </div>
-        <div class="input">
-{# <input class="text" type="text" name="province" placeholder="Provincia" /> #}
-<select name="province" id="provinces" class="text"></select>
+		<div class="form-container">
+			<div class="rowOne">
+				<h2 class="title">Contacta con nosotros</h2>
+				<div class="socials">
+					<p>
+						<img src="/public/images/a1.svg" alt="icon one"/>Bartolomé de Medina,
+						          7, Bajo, 41004, Sevilla.
+					</p>
+					<p>
+						<img src="/public/images/a3.svg" alt="icon three"/>info@globestone.es
+					</p>
+					<p>
+						<img src="/public/images/a2.svg" alt="icon two"/>(+34) 649 984 123
+					</p>
+				</div>
+			</div>
+			<form class="form" action="/contacto" method="POST">
+				<div class="inputs">
+					<span class="error-input">{{ errors.name }} </span>
+					<div class="input">
+						<input class="text" type="text" name="name" placeholder="Nombre*"/>
+					</div>
 
+					<span class="error-input">{{ errors.lastname }} </span>
+					<div class="input">
+						<input class="text" type="text" name="lastname" placeholder="Apellidos*"/>
+					</div>
 
-        </div>
-      </div>
+					<span class="error-input">{{ errors.phone }} </span>
+					<div class="input">
+						<input class="text" type="text" name="phone" placeholder="Teléfono*"/>
+					</div>
 
-      <div class="checks">
-        <p class="t">¿Qué servicios te interesan?</p>
-
-        <div class="checks__list">
-          <div class="checkbox">
-            <label class="label">
-<input type="checkbox" name="service[]" value="Tejas solares"/>
+					<span class="error-input">{{ errors.email }} </span>
+					<div class="input">
+						<input class="text" type="text" name="email" placeholder="Mail*"/>
+					</div>
+<span class="error-input">{{ errors.province }}
+</span>
 
 
-              <span class="checkmark"></span>
-              <span class="text">Tejas solares </span>
-            </label>
-          </div>
-
-          <div class="checkbox">
-            <label class="label">
-<input type="checkbox" name="service[]" value="Autoconsumo"/>
+					<div
+						class="input">
+						{# <input class="text" type="text" name="province" placeholder="Provincia" /> #}
+						<select name="province" id="provinces" class="text"></select>
 
 
-              <span class="checkmark"></span>
-              <span class="text">Autoconsumo </span>
-            </label>
-          </div>
+					</div>
 
-          <div class="checkbox">
-            <label class="label">
-<input type="checkbox" name="service[]" value="Land scouting"/>
+				</div>
 
+				<div class="checks">
+					<p class="t">¿Qué servicios te interesan?</p>
 
-              <span class="checkmark"></span>
-              <span class="text">Land scouting </span>
-            </label>
-          </div>
-
-          <div class="checkbox">
-            <label class="label">
-<input type="checkbox" name="service[]" value="Agricultura fotovoltaica"/>
+					<div class="checks__list">
+						<div class="checkbox">
+							<label class="label">
+								<input type="checkbox" name="service[]" value="Tejas solares"/>
 
 
-              <span class="checkmark"></span>
-              <span class="text">Agricultura fotovoltaica </span>
-            </label>
-          </div>
+								<span class="checkmark"></span>
+								<span class="text">Tejas solares
+								</span>
+							</label>
+						</div>
 
-          <div class="checkbox">
-            <label class="label">
-<input type="checkbox" name="service[]" value="Sistema modular"/>
-
-
-              <span class="checkmark"></span>
-              <span class="text">Sistema modular </span>
-            </label>
-          </div>
-
-          <div class="checkbox">
-            <label class="label">
-<input type="checkbox" name="service[]" value="Almacenamiento inteligente"/>
+						<div class="checkbox">
+							<label class="label">
+								<input type="checkbox" name="service[]" value="Autoconsumo"/>
 
 
-              <span class="checkmark"></span>
-              <span class="text">Almacenamiento inteligente </span>
-            </label>
-          </div>
+								<span class="checkmark"></span>
+								<span class="text">Autoconsumo
+								</span>
+							</label>
+						</div>
 
-          <div class="checkbox">
-            <label class="label">
-<input type="checkbox" name="service[]" value="Punto de recarga de vehículos eléctricos"/>
-
-
-              <span class="checkmark"></span>
-              <span class="text"
-                >Punto de recarga de vehículos eléctricos
-              </span>
-            </label>
-          </div>
-
-          <div class="checkbox">
-            <label class="label">
-<input type="checkbox" name="service[]" value="Solar flotante"/>
+						<div class="checkbox">
+							<label class="label">
+								<input type="checkbox" name="service[]" value="Land scouting"/>
 
 
-              <span class="checkmark"></span>
-              <span class="text">Solar flotante </span>
-            </label>
-          </div>
-        </div>
-<textarea class="textarea" name="message" placeholder="Mensaje"></textarea>
+								<span class="checkmark"></span>
+								<span class="text">Land scouting
+								</span>
+							</label>
+						</div>
+
+						<div class="checkbox">
+							<label class="label">
+								<input type="checkbox" name="service[]" value="Agricultura fotovoltaica"/>
 
 
+								<span class="checkmark"></span>
+								<span class="text">Agricultura fotovoltaica
+								</span>
+							</label>
+						</div>
 
-        <input
-          type="submit"
-          value="Enviar"
-          class="btn btn-primary btn-block btn-right"
-        />
-      </div>
-    </form>
-  </div>
-</main>
-
-{#
-<div class="whatsapp">
-  <img src="/public/images/yellow-w.svg" alt="icon for whatsapp" />
-  <p>Escríbenos por WhatsApp haciendo click aquí</p>
-</div>
-#}
-
-<div class="more-socials">
-  <div class="img-cont">
-    <img class="img" src="/public/images/fotovoltaica.jpg" alt="solar" />
-  </div>
-  <div class="content">
-    <p>
-      Síguenos para estar al tanto de todas las novedades sobre energías
-      renovables.
-    </p>
-<div class="socials-link">
+						<div class="checkbox">
+							<label class="label">
+								<input type="checkbox" name="service[]" value="Sistema modular"/>
 
 
-	<a href="https://www.linkedin.com/company/globestone-es/" target="_blank">
+								<span class="checkmark"></span>
+								<span class="text">Sistema modular
+								</span>
+							</label>
+						</div>
+
+						<div class="checkbox">
+							<label class="label">
+								<input type="checkbox" name="service[]" value="Almacenamiento inteligente"/>
 
 
-      <img
-        class="h-desktop__socials-icon"
-        src="/public/images/g-l.png"
-        alt="linkedin logo green"
-      />
-</a>
-<a href="https://www.instagram.com/globestone.es/" target="_blank">
+								<span class="checkmark"></span>
+								<span class="text">Almacenamiento inteligente
+								</span>
+							</label>
+						</div>
+
+						<div class="checkbox">
+							<label class="label">
+								<input type="checkbox" name="service[]" value="Punto de recarga de vehículos eléctricos"/>
 
 
-      <img
-        class="h-desktop__socials-icon"
-        src="/public/images/g-i.png"
-        alt="instagram logo green"
-      />
-</a>
+								<span class="checkmark"></span>
+								<span class="text">Punto de recarga de vehículos eléctricos
+								</span>
+							</label>
+						</div>
 
-<a target="_blank" href="https://www.facebook.com/watch/Globestone-Desarrollos-Energ%C3%A9ticos-107372891793889/">
-
-      <img
-        class="h-desktop__socials-icon"
-        src="/public/images/g-f.png"
-        alt="facebook logo green"
-      />
-</a>
-{# <img
+						<div class="checkbox">
+							<label class="label">
+								<input type="checkbox" name="service[]" value="Solar flotante"/>
 
 
-        class="h-desktop__socials-icon"
-        src="/public/images/g-t.png"
-        alt="twitter logo green"
-/> #}
+								<span class="checkmark"></span>
+								<span class="text">Solar flotante
+								</span>
+							</label>
+						</div>
+					</div>
+					<textarea class="textarea" name="message" placeholder="Mensaje"></textarea>
 
 
-    </div>
-  </div>
-</div>
+					<input type="submit" value="Enviar" class="btn btn-primary btn-block btn-right"/>
+				</div>
+			</form>
+		</div>
+	</main>
+
+	{#
+	<div class="whatsapp">
+	  <img src="/public/images/yellow-w.svg" alt="icon for whatsapp" />
+	  <p>Escríbenos por WhatsApp haciendo click aquí</p>
+	</div>
+	#}
+
+	<div class="more-socials">
+		<div class="img-cont">
+			<img class="img" src="/public/images/fotovoltaica.jpg" alt="solar"/>
+		</div>
+		<div class="content">
+			<p>
+				Síguenos para estar al tanto de todas las novedades sobre energías
+				      renovables.
+			</p>
+			<div class="socials-link">
+
+
+				<a href="https://www.linkedin.com/company/globestone-es/" target="_blank">
+
+
+					<img class="h-desktop__socials-icon" src="/public/images/g-l.png" alt="linkedin logo green"/>
+				</a>
+				<a href="https://www.instagram.com/globestone.es/" target="_blank">
+
+
+					<img class="h-desktop__socials-icon" src="/public/images/g-i.png" alt="instagram logo green"/>
+				</a>
+
+				<a target="_blank" href="https://www.facebook.com/watch/Globestone-Desarrollos-Energ%C3%A9ticos-107372891793889/">
+
+					<img class="h-desktop__socials-icon" src="/public/images/g-f.png" alt="facebook logo green"/>
+				</a>
+				{# <img
+				
+				
+				        class="h-desktop__socials-icon"
+				        src="/public/images/g-t.png"
+				        alt="twitter logo green"
+				/> #}
+
+
+			</div>
+		</div>
+	</div>
 {% endblock %}

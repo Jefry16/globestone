@@ -51,6 +51,9 @@
     &-item {
       display: none;
     }
+    a{
+      color: #353535;
+    }
   }
   @include md {
     margin-bottom: 4rem;

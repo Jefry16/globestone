@@ -16,7 +16,12 @@
 <script src="/js/main.js" defer></script></head><body></body>
 
 {% for item in messages %}
-	<div class="">{{item.message }}</div>
+<div class="alert {{item.type}}">
+	<p class="title">{{item.title}}</p>
+	<p class="message">{{item.message }}</p>
+</div>
+
+
 {% endfor %}
 {{ include('./Themes/header-mobile.html') }}{{
     include('./Themes/header.html') }}{{ include('./Themes/mobile-menu.html')

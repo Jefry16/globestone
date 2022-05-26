@@ -33,5 +33,5 @@ $router->add('politicas-de-cookies', ['controller' => 'Statico', 'action' => 'po
 $router->add('politicas-de-privacidad', ['controller' => 'Statico', 'action' => 'politicasDePrivacidad']);
 $router->add('contacto', ['controller' => 'Statico', 'action' => 'contacto']);
 $router->add('servicios/{title:[a-zÁ-Ź-]+}', ['controller' => 'Statico', 'action' => 'services']);
-
+$router->add('{controller}/{action}');
 $router->dispatch($_SERVER['QUERY_STRING']);

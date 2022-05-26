@@ -4,6 +4,7 @@
 namespace App\Controllers;
 
 use App\Models\Contact;
+use App\Modules\Message;
 use Core\Controller;
 use Core\View;
 
@@ -24,7 +25,7 @@ class Statico extends Controller
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $contactModel = new Contact($_POST);
             if ($contactModel->save()) {
-                $this->redirect('/');
+                $this->redirect('/statico/set-message');
             }
         }
         View::renderTemplate('Frontend/contacto.html', ['errors' => $contactModel->errors ?? []]);
@@ -50,4 +51,9 @@ class Statico extends Controller
         View::renderTemplate('Frontend/privacidad.html');
     }
 
+    public function setMessageAction()
+    {
+        Message::set('Nos pondremos en contacto contigo tan pronto nos sea posible.', 'Mensaje enviado.', Message::SUCCESS);
+        $this->redirect('/');
+    }
 }

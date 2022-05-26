@@ -15,13 +15,14 @@ class Message
     const INFO = 'info';
     const FAIL = 'fail';
 
-    public static function set($message, $type ="success") 
+    public static function set($message, $title, $type = "success") 
     {
         if ( !isset($_SESSION['flash_notification']) ) {
             $_SESSION['flash_notification'] = [];
         }
         $_SESSION['flash_notification'][] = [
             'message' => $message,
+            'title' => $title,
             'type' => $type
         ];
     }

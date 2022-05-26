@@ -11,6 +11,7 @@ import renderServicesOnHome, {
 import { openServicesDesktopMenu } from "./open-desktop-menu.js";
 import dropDownService from "./dropdownServices.js";
 import { globalClick } from "./globalClick.js";
+import { hideAlert } from "./hide-alert.js";
 
 export default function ui() {
   desktopMenuLinks();
@@ -24,4 +25,5 @@ export default function ui() {
   renderServicesOnHome();
   dropDownService();
   globalClick();
+  hideAlert()
 }

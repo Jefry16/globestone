@@ -32,7 +32,7 @@ export async function showSingleService() {
           .setAttribute("src", "/public/images/" + service.slide[slideCount].i);
         const copy = service.slide[slideCount].copy;
         pageContainer.querySelector(".slide p").innerHTML = ` ${
-          "&copy;" + copy.charAt(0).toUpperCase() + copy.slice(1)
+          copy == '' ?'' : "&copy;" + copy.charAt(0).toUpperCase() + copy.slice(1)
         }`;
 
         slideCount++;
