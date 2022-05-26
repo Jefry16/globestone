@@ -20,26 +20,26 @@ class Config
      * Database name
      * @var string
      */
-    const DB_NAME = 'globestone';
+    const DB_NAME = 'jefrycay_globestone';
 
 
     /**
      * Database user
      * @var string
      */
-    const DB_USER = 'root';
+    const DB_USER = 'jefrycay_globestone';
 
     /**
      * Database password
      * @var string
      */
-    const DB_PASSWORD = '';
+    const DB_PASSWORD = '&VDJc8}Ce=j5';
 
     /**
      * Show or hide error messages on screen
      * @var boolean
      */
-    const SHOW_ERRORS = false;
+    const SHOW_ERRORS = true;
 
 
     const SECRET_KEY = '';

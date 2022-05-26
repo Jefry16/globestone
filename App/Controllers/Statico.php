@@ -25,10 +25,10 @@ class Statico extends Controller
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             $contactModel = new Contact($_POST);
             if ($contactModel->save()) {
-                $this->redirect('/statico/set-message');
+                $this->redirectSecure('/statico/set-message');
             }
         }
-        View::renderTemplate('Frontend/contacto.html', ['errors' => $contactModel->errors ?? []]);
+        View::renderTemplate('Frontend/contacto.html', ['errors' => $contactModel->errors ?? [], 'input' => $_POST]);
     }
 
     public function servicesAction()
@@ -54,6 +54,6 @@ class Statico extends Controller
     public function setMessageAction()
     {
         Message::set('Nos pondremos en contacto contigo tan pronto nos sea posible.', 'Mensaje enviado.', Message::SUCCESS);
-        $this->redirect('/');
+        $this->redirectSecure('/');
     }
 }

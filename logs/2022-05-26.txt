@@ -1,0 +1,10 @@
+[26-May-2022 10:47:06 Europe/Berlin] Uncaught exception: 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'jefrycay_globestone'@'localhost' (using password: YES)'
+Stack trace: #0 /home/jefry/Documents/gs/Core/Model.php(27): PDO->__construct('mysql:host=loca...', 'jefrycay_globes...', 'x_&Q;i9~X[IL')
+#1 /home/jefry/Documents/gs/App/Models/Contact.php(25): Core\Model::getDB()
+#2 /home/jefry/Documents/gs/App/Controllers/Statico.php(27): App\Models\Contact->save()
+#3 [internal function]: App\Controllers\Statico->contactoAction()
+#4 /home/jefry/Documents/gs/Core/Controller.php(55): call_user_func_array(Array, Array)
+#5 /home/jefry/Documents/gs/Core/Router.php(123): Core\Controller->__call('contacto', Array)
+#6 /home/jefry/Documents/gs/public/index.php(37): Core\Router->dispatch('contacto')
+#7 {main}
+Thrown in '/home/jefry/Documents/gs/Core/Model.php' on line 27

@@ -18,7 +18,7 @@
 			<img class="contact__i" src="/public/images/random.svg" alt="random"/>
 		</div>
 
-		<div class="form-container">
+		<div class="form-container" id="contacto">
 			<div class="rowOne">
 				<h2 class="title">Contacta con nosotros</h2>
 				<div class="socials">
@@ -34,26 +34,34 @@
 					</p>
 				</div>
 			</div>
-			<form class="form" action="/contacto" method="POST">
+			<form class="form" action="/contacto#contacto" method="POST">
 				<div class="inputs">
 					<span class="error-input">{{ errors.name }} </span>
 					<div class="input">
-						<input class="text" type="text" name="name" placeholder="Nombre*"/>
+<input value="{{input.name}}" class="text" type="text" name="name" placeholder="Nombre*"/>
+
+
 					</div>
 
 					<span class="error-input">{{ errors.lastname }} </span>
 					<div class="input">
-						<input class="text" type="text" name="lastname" placeholder="Apellidos*"/>
+<input value="{{input.lastname}}" class="text" type="text" name="lastname" placeholder="Apellidos*"/>
+
+
 					</div>
 
 					<span class="error-input">{{ errors.phone }} </span>
 					<div class="input">
-						<input class="text" type="text" name="phone" placeholder="Teléfono*"/>
+<input value="{{input.phone}}" class="text" type="text" name="phone" placeholder="Teléfono*"/>
+
+
 					</div>
 
 					<span class="error-input">{{ errors.email }} </span>
 					<div class="input">
-						<input class="text" type="text" name="email" placeholder="Mail*"/>
+<input value="{{input.email}}" class="text" type="text" name="email" placeholder="Mail*"/>
+
+
 					</div>
 <span class="error-input">{{ errors.province }}
 </span>
@@ -62,7 +70,8 @@
 					<div
 						class="input">
 						{# <input class="text" type="text" name="province" placeholder="Provincia" /> #}
-						<select name="province" id="provinces" class="text"></select>
+<select name="province" id="provinces" class="text"></select>
+
 
 
 					</div>
