@@ -5,7 +5,7 @@
       {
         "corejs": 3.21,
         "useBuiltIns": "usage",
-        "targets": "> 0.25%, not dead, not ie 11"
+        "targets": "> 0.60%, not dead, not ie 11"
       }
     ]
   ]
