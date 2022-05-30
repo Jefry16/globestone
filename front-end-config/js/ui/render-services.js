@@ -1,13 +1,13 @@
 import { renderServices } from "./services";
 
- function formatTitle(title) {
-   const titleArray = title.split(" ");
-   if (titleArray.length < 3) {
-     return titleArray.join("<br />").toUpperCase();
-   }
+function formatTitle(title) {
+  const titleArray = title.split(" ");
+  if (titleArray.length < 3) {
+    return titleArray.join("<br />").toUpperCase();
+  }
 
-   return title.toUpperCase();
- }
+  return title.toUpperCase();
+}
 
 export function toggleTextOnService() {
   document.querySelectorAll(".list__item").forEach((x) => {
@@ -21,29 +21,28 @@ export function toggleTextOnService() {
   });
 }
 export default function renderServicesOnHome() {
-  renderServices().then((data) => {
-    const container = document.querySelector(".home .list");
-    if (container) {
+  const container = document.querySelector(".home .list");
+
+  if (container) {
+    renderServices().then((data) => {
       let content = "";
       data.forEach((s) => {
         content += `
         <a class="link" href=/servicios/${s.title
           .split(" ")
           .join("-")}><div class="list__item">
-          <p class="copy">${
-            s.copy
-              ? "&copy;" + s.copy.charAt(0).toUpperCase() + s.copy.slice(1)
-              : ""
+          <p class="copy">${s.copy
+            ? "&copy;" + s.copy.charAt(0).toUpperCase() + s.copy.slice(1)
+            : ""
           }</p>
         <h2 class="list__item-title">${formatTitle(s.title)}</h2>
-        <img class="list__item-img" src="/public/images/${s.main}" alt="${
-          s.title
-        }">
+        <img class="list__item-img" src="/public/images/${s.main}" alt="${s.title
+          }">
       </div></a>
         `;
       });
-      container.innerHTML = content;
-    }
+    container.innerHTML = content;
     toggleTextOnService();
   });
+  }
 }

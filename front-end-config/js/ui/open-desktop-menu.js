@@ -4,7 +4,6 @@ export function openServicesDesktopMenu() {
 
   if (servicesLink) {
     servicesLink.addEventListener("click", function () {
-      console.log(1);
       active = !active;
       if (active) {
         servicesLink.innerHTML = "SERVICIOS &#9660;";

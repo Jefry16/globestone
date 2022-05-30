@@ -86,6 +86,11 @@ abstract class Controller
         header('Location: http://' . $_SERVER['HTTP_HOST'] . $url, true, 303);
     }
 
+    protected function redirectSecure($url)
+    {
+        header('Location: https://' . $_SERVER['HTTP_HOST'] . $url, true, 303);
+    }
+
     protected function redirectIfNotAdmin()
     {
          if (!isset($_SESSION['adminType'])) {

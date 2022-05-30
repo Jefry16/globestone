@@ -19,7 +19,6 @@ export default function ui() {
   stickMenu();
   openMenu();
   closeMenu();
-  renderServices();
   openServicesMobileMenu();
   openServicesDesktopMenu();
   renderServicesOnHome();

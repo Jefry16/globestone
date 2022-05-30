@@ -4,16 +4,16 @@ function formatTitle(string) {
   return string.charAt(0).toUpperCase() + string.slice(1);
 }
 export default function dropDownService() {
-  renderServices().then((services) => {
-    const container = document.querySelector(".s__select");
+  const container = document.querySelector(".s__select");
+  if (container) {
 
-    if (container) {
+    renderServices().then((services) => {
+
       let items =
         "<div id='opener'>Servicios <span class='green-caret'>►</span></div>";
       services.forEach(
         (s) =>
-          (items += `<div class="s__select-item"><a href='/servicios/${
-            s.url
+        (items += `<div class="s__select-item"><a href='/servicios/${s.url
           }'>${formatTitle(s.title)}</a></div>`)
       );
       container.innerHTML = items;
@@ -32,6 +32,6 @@ export default function dropDownService() {
           }
         });
       });
-    }
-  });
+    });
+  }
 }
