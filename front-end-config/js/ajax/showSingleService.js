@@ -46,7 +46,10 @@ export async function showSingleService() {
       });
 
       pageContainer.querySelector(".ventajas").innerHTML = ventajas;
-      pageContainer.querySelector(".fab").textContent = service.fab;
+      if (pageContainer.querySelector(".fab")) {
+
+        pageContainer.querySelector(".fab").textContent = service.fab;
+      }
 
       if (!service.fab.trim().length > 0) {
         pageContainer.querySelector(".fab-title").remove();
