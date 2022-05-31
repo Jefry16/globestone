@@ -53,7 +53,11 @@ export async function showSingleService() {
 
       if (!service.fab.trim().length > 0) {
         pageContainer.querySelector(".fab-title").remove();
-        pageContainer.querySelector(".fab").remove();
+
+        if (pageContainer.querySelector(".fab")) {
+
+          pageContainer.querySelector(".fab").remove();
+        }
       }
     } else if (service && service.title == "autoconsumo") {
       document.querySelector(".slide-holder").remove();
