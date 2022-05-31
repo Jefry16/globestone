@@ -60,7 +60,10 @@ export async function showSingleService() {
         }
       }
     } else if (service && service.title == "autoconsumo") {
-      document.querySelector(".slide-holder").remove();
+      if (document.querySelector(".slide-holder")) {
+        document.querySelector(".slide-holder").remove();
+
+      }
       pageContainer.querySelector("h1").textContent = "Autoconsumo";
 
       let description = "";
