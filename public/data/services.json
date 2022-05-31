@@ -1,7 +1,7 @@
 [
   {
     "url": "tejas-solares",
-    "copy": "",
+    "copy": "sunstyle",
     "title": "tejas solares",
     "description": [
       "Esta tecnología permite construir edificios más sostenibles y autónomos al tiempo que garantiza la impermeabilización de la misma manera que un techo convencional.",
@@ -17,7 +17,7 @@
       "Garantía de rendimiento de 25 años."
     ],
     "fab": "Akuo® fabrica y comercializa la cubierta fotovoltaica AKUO TILEE® (tejas solares). Pioneros en Francia y tras un gran éxito, lanzan al mercado internacional esta solución de energía renovable perfecta para industrias modernas y sostenibles.",
-    "main": "maintejas.webp",
+    "main": "maintejassunstyle.webp",
     "slide": [
       {
         "i": "tejassunstylea.jpeg",
@@ -47,7 +47,7 @@
   },
   {
     "url": "autoconsumo",
-    "copy": "",
+    "copy": "sunstyle",
     "title": "autoconsumo",
     "description": [
       "En Globestone hacemos un estudio pormenorizado de tus necesidades energéticas y te proponemos la mejor solución y la más eficiente."
@@ -69,7 +69,7 @@
       "Consumo inteligente: podrás monitorizar tu consumo, ¡sin sorpresas!",
       "Contribuir con un modo de energía sostenible y que respete el medio ambiente."
     ],
-    "main": "mainautoconsumo.webp",
+    "main": "mainautoconsumosunstyle.webp",
     "second": "autoconsumoc.png",
     "third": "paneles-solares.png"
   },
