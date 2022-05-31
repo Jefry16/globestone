@@ -7,8 +7,11 @@ export async function showSingleService() {
     const title = route[2].split("-").join(" ");
     const service = dataAsJson.find((s) => s.title === title);
     const pageContainer = document.querySelector(".service");
+
     if (service && service.title != "autoconsumo") {
-    document.querySelectorAll(".second-img-cont").forEach((x) => x.remove());
+      pageContainer.querySelector(".why .why__title").textContent = `¿Por qué escoger ${service.title} ?`
+
+      document.querySelectorAll(".second-img-cont").forEach((x) => x.remove());
       pageContainer.querySelector("h1").textContent =
         service.title.charAt(0).toUpperCase() + service.title.slice(1);
       let description = "";
@@ -20,8 +23,7 @@ export async function showSingleService() {
         .querySelector(".main-image-container img")
         .setAttribute("src", "/public/images/" + service.main);
 
-      pageContainer.querySelector(".why .why__title").textContent +=
-        service.title + "?";
+
 
       pageContainer.querySelector(".why .why__desc").textContent = service.why;
 
@@ -31,9 +33,8 @@ export async function showSingleService() {
           .querySelector(".slide img")
           .setAttribute("src", "/public/images/" + service.slide[slideCount].i);
         const copy = service.slide[slideCount].copy;
-        pageContainer.querySelector(".slide p").innerHTML = ` ${
-          copy == '' ?'' : "&copy;" + copy.charAt(0).toUpperCase() + copy.slice(1)
-        }`;
+        pageContainer.querySelector(".slide p").innerHTML = ` ${copy == '' ? '' : "&copy;" + copy.charAt(0).toUpperCase() + copy.slice(1)
+          }`;
 
         slideCount++;
         if (slideCount >= service.slide.length) {
@@ -52,7 +53,10 @@ export async function showSingleService() {
       }
 
       if (!service.fab.trim().length > 0) {
-        pageContainer.querySelector(".fab-title").remove();
+        if (pageContainer.querySelector(".fab-title")) {
+
+          pageContainer.querySelector(".fab-title").remove();
+        }
 
         if (pageContainer.querySelector(".fab")) {
 
@@ -65,13 +69,11 @@ export async function showSingleService() {
 
       }
       pageContainer.querySelector("h1").textContent = "Autoconsumo";
-
+      pageContainer.querySelector(".why .why__title").textContent = `¿Por qué escoger autoconsumo?`
       let description = "";
       service.description.forEach((x) => (description += `<p>${x}</p>`));
       pageContainer.querySelector(".description").innerHTML = description;
 
-      pageContainer.querySelector(".why .why__title").textContent +=
-        "autoconsumo?";
 
       pageContainer.querySelector(".why .why__desc").textContent = service.why;
 
